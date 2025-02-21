@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Gates of Olympus</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="css/media.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="language-switcher">
+    <button id="no" class="lang-button">NO</button>
+    <span>/</span>
+    <button id="se" class="lang-button">SE</button>
+</div>
+  <main class="main">
+    <section class="main__wheel">
+      <div class="main-wheel__content">
+        <h1 class="main-wheel__title" data-no="Spinn hjulet!" data-se="Snurra hjulet!">Spinn hjulet! 
+        </h1>
+        <h2 class="main-wheel__title main-wheel__title2" data-no="Få velkomstbonusen din!" data-se="Få din välkomstbonus!">Få velkomstbonusen din!</h2>
+        <button class="button main-wheel__button">
+          <img src="images/button-spin.png" data-no="images/button-spin-no.png" data-se="images/button-spin-se.png" alt="Spin Button" />
+        </button>
+        <div class="main-wheel__wrap">
+          <audio id="wheel" preload="">
+            <source src="media/wheel.mp3" type="audio/mpeg" />
+            <source src="media/wheel.ogg" type="audio/ogg; codecs=vorbis" />
+            <source src="media/wheel.wav" type="audio/wav" />
+          </audio>
+          <img class="main-wheel__stopper" src="images/wheel-stopper.png" alt="" title="" />
+          <img class="main-wheel__image" data-no="images/wheel/wheel-no.png" data-se="images/wheel/wheel-se.png" src="images/wheel/wheel.png" alt="" title="" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <section class="popup first-spin">
+    <div class="popup__content">
+      <audio id="winfs" preload="">
+        <source src="media/fanfare-1.mp3" type="audio/mpeg" />
+        <source src="media/fanfare-1.ogg" type="audio/ogg; codecs=vorbis" />
+        <source src="media/fanfare-1.wav" type="audio/wav" />
+      </audio>
+      <img data-no="images/popup-no.png" data-se="images/popup-se.png" src="images/popup.png" alt="Popup Image" />
+      <a href="#" class="button popup__button">
+        <img class="popup__button-image" data-no="images/popup-button-no.png" data-se="images/popup-button-se.png" src="images/popup-button.png" alt="" />
+      </a>
+    </div>
+  </section>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
